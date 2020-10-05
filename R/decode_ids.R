@@ -16,15 +16,15 @@
 #' @examples
 #' \donttest{
 #' # Decode IDs including already decoded ids and NA
+#'
 #' decode_ids(c(
 #'   "32013030-2d30-3033-3338-3733fa30c4fa",
-#'   "NA",
+#'   NA_character_,
 #'   "00-0033873",
-#'   "NA",
+#'   NA_character_,
 #'   "32013030-2d30-3032-3739-3434d4d3846d"
 #' ))
 #' }
 decode_ids <- function(encoded_id) {
   decode_ids_cpp(encoded_id)
 }
-

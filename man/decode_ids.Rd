@@ -14,9 +14,6 @@ play-by-play data loaded with}
 Decoded GSIS player IDs
 }
 \description{
-Decode NFL GSIS player IDs
-}
-\details{
 This function is a wrapper around the high efficient c++ function
 for fast decoding of NFL GSIS player ids intended to be used within the R
 package nflfastR
@@ -24,11 +21,12 @@ package nflfastR
 \examples{
 \donttest{
 # Decode IDs including already decoded ids and NA
+
 decode_ids(c(
   "32013030-2d30-3033-3338-3733fa30c4fa",
-  "NA",
-  "00-0033873"
-  "NA",
+  NA_character_,
+  "00-0033873",
+  NA_character_,
   "32013030-2d30-3032-3739-3434d4d3846d"
 ))
 }
