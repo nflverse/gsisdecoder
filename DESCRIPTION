@@ -1,12 +1,13 @@
 Package: gsisdecoder
-Title: What the Package Does (One Line, Title Case)
+Title: High Efficient Functions to Decode NFL Player IDs
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Sebastian",
            family = "Carl",
            role = c("aut", "cre"),
            email = "mrcaseb@gmail.com")
-Description: What the package does (one paragraph).
+Description: A set of high efficient functions to decode identifiers of National 
+  Football League players.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
