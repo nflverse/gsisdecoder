@@ -6,3 +6,4 @@
 ^\.github$
 ^codecov\.yml$
 ^\.travis\.yml$
+^CRAN-RELEASE$
