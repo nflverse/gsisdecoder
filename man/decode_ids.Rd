@@ -9,7 +9,7 @@ decode_ids(player_ids)
 \arguments{
 \item{player_ids}{A character vector of encoded (or decoded) GSIS player IDs
 in NFL play-by-play data sets loaded with \link[nflfastR]{fast_scraper} or
-\link[nflfastR]{build_nflfastR_pbp}.}
+\code{nflfastR::build_nflfastR_pbp}.}
 }
 \value{
 Decoded GSIS player IDs
