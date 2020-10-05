@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # gsisdecoder
 
 <!-- badges: start -->
+[![R build status](https://github.com/mrcaseb/gsisdecoder/workflows/R-CMD-check/badge.svg)](https://github.com/mrcaseb/gsisdecoder/actions)
 <!-- badges: end -->
 
 The goal of gsisdecoder is to ...
