@@ -20,4 +20,5 @@ Imports:
 URL: https://github.com/mrcaseb/gsisdecoder
 BugReports: https://github.com/mrcaseb/gsisdecoder/issues
 Suggests: 
-    testthat
+    testthat,
+    covr

@@ -6,11 +6,12 @@
 
 #' Decode NFL GSIS player IDs
 #'
-#' @param encoded_id A vector of encoded (or decoded) GSIS player IDs in NFL
-#' play-by-play data loaded with
-#' @description This function is a wrapper around the high efficient c++ function
-#' for fast decoding of NFL GSIS player ids intended to be used within the R
-#' package nflfastR
+#' @param player_ids A character vector of encoded (or decoded) GSIS player IDs
+#' in NFL play-by-play data sets loaded with \link[nflfastR]{fast_scraper} or
+#' \link[nflfastR]{build_nflfastR_pbp}.
+#' @description This function is a wrapper around the high efficient c++
+#' function for fast decoding of NFL GSIS player ids intended to be used within
+#' the R package nflfastR.
 #' @return Decoded GSIS player IDs
 #' @export
 #' @examples
@@ -25,6 +26,6 @@
 #'   "32013030-2d30-3032-3739-3434d4d3846d"
 #' ))
 #' }
-decode_ids <- function(encoded_id) {
-  decode_ids_cpp(encoded_id)
+decode_ids <- function(player_ids) {
+  decode_ids_cpp(player_ids)
 }

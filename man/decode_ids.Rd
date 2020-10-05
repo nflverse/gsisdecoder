@@ -4,19 +4,20 @@
 \alias{decode_ids}
 \title{Decode NFL GSIS player IDs}
 \usage{
-decode_ids(encoded_id)
+decode_ids(player_ids)
 }
 \arguments{
-\item{encoded_id}{A vector of encoded (or decoded) GSIS player IDs in NFL
-play-by-play data loaded with}
+\item{player_ids}{A character vector of encoded (or decoded) GSIS player IDs
+in NFL play-by-play data sets loaded with \link[nflfastR]{fast_scraper} or
+\link[nflfastR]{build_nflfastR_pbp}.}
 }
 \value{
 Decoded GSIS player IDs
 }
 \description{
-This function is a wrapper around the high efficient c++ function
-for fast decoding of NFL GSIS player ids intended to be used within the R
-package nflfastR
+This function is a wrapper around the high efficient c++
+function for fast decoding of NFL GSIS player ids intended to be used within
+the R package nflfastR.
 }
 \examples{
 \donttest{
