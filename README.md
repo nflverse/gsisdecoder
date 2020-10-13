@@ -1,12 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# gsisdecoder
+gsisdecoder
+===========
 
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/gsisdecoder)](https://CRAN.R-project.org/package=gsisdecoder)
+status](https://www.r-pkg.org/badges/version-ago/gsisdecoder)](https://CRAN.R-project.org/package=gsisdecoder)
+[![CRAN
+downloads](http://cranlogs.r-pkg.org/badges/grand-total/gsisdecoder)](https://CRAN.R-project.org/package=gsisdecoder)
 [![R build
 status](https://github.com/mrcaseb/gsisdecoder/workflows/R-CMD-check/badge.svg)](https://github.com/mrcaseb/gsisdecoder/actions)
 [![Travis build
@@ -22,11 +25,10 @@ within the package
 needs to be precompiled it was outsourced from the mentioned package
 into this standalone package.
 
-## Installation
+Installation
+------------
 
 You can install the released version of gsisdecoder from
 [CRAN](https://CRAN.R-project.org) with:
 
-``` r
-install.packages("gsisdecoder")
-```
+    install.packages("gsisdecoder")
