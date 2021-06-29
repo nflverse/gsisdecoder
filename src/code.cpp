@@ -14,8 +14,7 @@ std::string to_ascii(const std::string& cut) {
   // get the ASCII representation
   std::string ascii;
   for (size_t i = 0; i < hex.size(); i += 2) {
-    const std::string part = hex.substr(i, 2);
-    char base16 = std::stoul(part, nullptr, 16);
+    char base16 = std::stoul(hex.substr(i, 2), nullptr, 16);
     ascii += base16;
   }
   return ascii;
@@ -23,21 +22,21 @@ std::string to_ascii(const std::string& cut) {
 
 
 // [[Rcpp::export]]
-CharacterVector decode_ids_cpp(const std::vector< std::string >& new_id){
+CharacterVector decode_ids_cpp(const std::vector<std::string>& new_id){
   size_t n = new_id.size(); 
   CharacterVector out(n);
 
   for (size_t j = 0; j < n; ++j) {
-    const std::string& id = new_id.at(j);
-    if (id.size() == 36) {
-      const std::string ascii = to_ascii(id.substr(4, 24));
-      out.at(j) = ascii;
+    const std::string& id = new_id[j];
+    const size_t sz = id.size();
+    if (sz == 36) {
+      out[j] = to_ascii(id.substr(4, 24));
     }
-    else if (id.size() >= 5) {
-      out.at(j) = id;
+    else if (sz >= 5) {
+      out[j] = id;
     }
     else {
-      out.at(j) = NA_STRING;
+      out[j] = NA_STRING;
     }
   }
   return out;
