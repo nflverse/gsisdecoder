@@ -6,7 +6,7 @@
 using namespace Rcpp;
 
 // decode_ids_cpp
-CharacterVector decode_ids_cpp(std::vector< std::string > new_id);
+CharacterVector decode_ids_cpp(const std::vector< std::string >& new_id);
 RcppExport SEXP _gsisdecoder_decode_ids_cpp(SEXP new_idSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
