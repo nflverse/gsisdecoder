@@ -6,12 +6,12 @@
 using namespace Rcpp;
 
 // decode_ids_cpp
-CharacterVector decode_ids_cpp(const std::vector< std::string >& new_id);
+CharacterVector decode_ids_cpp(const std::vector<std::string>& new_id);
 RcppExport SEXP _gsisdecoder_decode_ids_cpp(SEXP new_idSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< std::vector< std::string > >::type new_id(new_idSEXP);
+    Rcpp::traits::input_parameter< const std::vector<std::string>& >::type new_id(new_idSEXP);
     rcpp_result_gen = Rcpp::wrap(decode_ids_cpp(new_id));
     return rcpp_result_gen;
 END_RCPP
